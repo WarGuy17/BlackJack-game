@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justin's Blackjack Game</title>
+    <link href="./media/styles.css" rel="stylesheet">
+</head>
+<body>
+    <div id="topPage">
+        <h1>BlackJack</h1>
+    </div>
+    <main id="mainPage">
+
+        <!--This is going to be where you can see your score and dealer score-->
+
+        <div id="scoreColumn">
+            <h4>Dealer Score:</h4>
+                <p id="dealerScore"></p>
+            <h4>Your Score:</h4>
+                <p id="yourScore"></p>
+        </div>
+
+        <!--This is going to be where the cards will be displayed-->
+
+        <div id="cardColumn">
+            <h3>Dealer Hand</h3>
+            <div class="dealerBox"></div>
+            <h3>Your Hand</h3>
+            <div class="userBox"></div>
+            <div class="buttonBox">
+                <div id="hitButton" class="button">hit</div>
+                <div id="stayButton" class="button">stay</div>
+                <div id="drawButton" class="button">Deal Hand</div>
+                <div id="playAgainButton" class="button">Play Again?</div>
+            </div>
+        </div>
+
+        <div id="cardDeck">
+            <h3>Deck of Cards</h3>
+            <div id="cardsPile"><p>Cards Placeholder</p></div>
+        </div>
+
+        <!--This is the narrator section pushing messages into an array that will be displayed.-->
+        
+        <div id="narratorColumn">
+            <h4>Narrator says:</h4>
+            <p id="narratorSpeech"></p>
+        </div>
+    </main>
+<script type="module" src="./Javascript/dom.js"></script>
+</body>
+</html>
